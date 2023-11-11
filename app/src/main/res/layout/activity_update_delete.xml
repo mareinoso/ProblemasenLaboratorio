@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.problemasenlaboratorio.UpdateDeleteActivity">
+
+    <TableRow
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:text="LABORATORIO"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <Spinner
+            android:id="@+id/spinnerLab"
+            android:entries="@array/laboratorios"
+            android:prompt="@string/preservation_prompt"
+            android:spinnerMode="dialog"
+            android:layout_height="35dp"
+            android:layout_width="0dp"
+            android:layout_weight="8"/>
+    </TableRow>
+    <TableRow
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:text="RUT"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etRut"
+            android:inputType="text"
+            android:maxLength="9"
+            android:gravity="center"
+            android:hint="RUT sin guion"
+            android:layout_height="35dp"
+            android:layout_width="0dp"
+            android:background="@drawable/edit_text_borde"
+            android:layout_weight="8"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginVertical="15dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+
+            android:text="NOMBRE"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etNombre"
+            android:inputType="text"
+            android:gravity="center"
+            android:hint="Nombre"
+            android:layout_height="35dp"
+            android:layout_width="0dp"
+            android:background="@drawable/edit_text_borde"
+            android:layout_weight="8"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="20dp">
+
+        <TextView
+            android:id="@+id/txtDesc"
+            android:text="DESCRIPCIÓN"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etDesc"
+            android:inputType="textMultiLine"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:background="@drawable/edit_text_borde"
+            android:layout_height="100dp"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_marginBottom="10dp"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginHorizontal="40dp">
+
+        <Button
+            android:id="@+id/btnupdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#11B800"
+            android:text="ACTUALIZAR (UPDATE)" />
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/rojo"
+            android:text="BORRAR (DELETE)" />
+    </TableRow>
+
+</TableLayout>
